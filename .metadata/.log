@@ -1,0 +1,44 @@
+!SESSION 2020-01-10 13:49:39.797 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/equipe/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/equipe/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-10 13:50:39.626
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+!SESSION 2020-01-10 13:59:21.825 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/equipe/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/equipe/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-10 13:59:47.347
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
+
+!ENTRY org.eclipse.core.resources 4 77 2020-01-10 14:02:13.530
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2020-01-10 14:02:13.530
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2020-01-10 14:02:13.530
+!MESSAGE /Users/equipe/Documents/Test/RestWithSpringBoot/RestWithSpringBoot/01-rest-with-spring-boot-eclipse overlaps the location of another project: '01-rest-with-spring-boot-eclipse'
+
+!ENTRY org.eclipse.core.resources 4 77 2020-01-10 14:08:14.351
+!MESSAGE Invalid project description.
+!SUBENTRY 1 unknown 0 0 2020-01-10 14:08:14.351
+!MESSAGE OK
+!SUBENTRY 1 org.eclipse.core.resources 4 77 2020-01-10 14:08:14.351
+!MESSAGE /Users/equipe/Documents/Test/RestWithSpringBoot/RestWithSpringBoot/01-rest-with-spring-boot-eclipse overlaps the location of another project: '01-rest-with-spring-boot-eclipse'
+!SESSION 2020-01-10 14:38:47.693 -----------------------------------------------
+eclipse.buildId=4.14.0.I20191210-0610
+java.version=1.8.0_231
+java.vendor=Oracle Corporation
+BootLoader constants: OS=macosx, ARCH=x86_64, WS=cocoa, NL=pt_BR
+Framework arguments:  -product org.eclipse.epp.package.java.product -keyring /Users/equipe/.eclipse_keyring
+Command-line arguments:  -os macosx -ws cocoa -arch x86_64 -product org.eclipse.epp.package.java.product -keyring /Users/equipe/.eclipse_keyring
+
+!ENTRY org.eclipse.core.net 1 0 2020-01-10 14:39:15.886
+!MESSAGE System property http.nonProxyHosts has been set to local|*.local|169.254/16|*.169.254/16 by an external source. This value will be overwritten using the values from the preferences
