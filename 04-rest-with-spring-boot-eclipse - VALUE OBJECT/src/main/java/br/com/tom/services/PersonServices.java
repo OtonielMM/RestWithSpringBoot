@@ -5,8 +5,8 @@ import java.util.List;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Service;
 
+import br.com.tom.data.model.Person;
 import br.com.tom.exception.ResourceNotFoundException;
-import br.com.tom.model.Person;
 import br.com.tom.repository.PersonRepository;
 
 @Service // Responsável por realizar a injecão de dependencia
