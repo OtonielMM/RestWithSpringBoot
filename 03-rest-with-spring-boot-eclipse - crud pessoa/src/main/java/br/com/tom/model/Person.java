@@ -2,15 +2,35 @@ package br.com.tom.model;
 
 import java.io.Serializable;
 
+import javax.persistence.Column;
+import javax.persistence.Entity;
+import javax.persistence.GeneratedValue;
+import javax.persistence.GenerationType;
+import javax.persistence.Id;
+import javax.persistence.Table;
+
+@Entity // mapear a entidade para o BD
+@Table(name="person") // definir o nome especifico para uma tabela no BD
+
 public class Person implements Serializable {
 	
 
 	private static final long serialVersionUID = 1L;
 
+	@Id
+	@GeneratedValue(strategy = GenerationType.IDENTITY) // Hibernate ficara encarregado de gerar o Id
 	private long id;
+	
+	@Column(name="first_name", nullable = false, length = 100) // Column vai informar o nome na base de dados
 	private String firstName;
+	
+	@Column(name="last_name", nullable = false, length = 100)
 	private String lastName;
+	
+	@Column(nullable = false, length = 100)
 	private String address;
+	
+	@Column(nullable = false, length = 6)
 	private String gender;
 
 	public Person() {

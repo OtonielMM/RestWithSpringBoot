@@ -3,13 +3,13 @@ package br.com.tom.exception;
 import org.springframework.http.HttpStatus;
 import org.springframework.web.bind.annotation.ResponseStatus;
 
-@ResponseStatus(HttpStatus.BAD_REQUEST)
+@ResponseStatus(HttpStatus.NOT_FOUND)
 
-public class UnsupportedMathOperentionException extends RuntimeException{
+public class ResourceNotFoundException extends RuntimeException{
 
 	private static final long serialVersionUID = 1L;
 	
-	public UnsupportedMathOperentionException(String exception) {
+	public ResourceNotFoundException(String exception) {
 		
 		super(exception);
 	}

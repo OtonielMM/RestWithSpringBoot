@@ -1,4 +1,4 @@
-package br.com.tom.converter;
+package br.com.tom.repository;
 
 public class converterNumero {
 	
