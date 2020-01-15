@@ -1,19 +1,29 @@
-package br.com.tom.model;
+package br.com.tom.data.vo.v2;
+
 
 import java.io.Serializable;
+import java.util.Date;
 
-public class Person implements Serializable {
+
+public class PersonVOv2 implements Serializable {
 	
 
 	private static final long serialVersionUID = 1L;
 
+	
 	private long id;
+	
 	private String firstName;
+	
 	private String lastName;
+	
 	private String address;
+	
 	private String gender;
+	
+	private Date birthDay;
 
-	public Person() {
+	public PersonVOv2() {
 		
 	}
 
@@ -57,11 +67,20 @@ public class Person implements Serializable {
 		this.gender = gender;
 	}
 
+	public Date getBirthDay() {
+		return birthDay;
+	}
+
+	public void setBirthDay(Date birthDay) {
+		this.birthDay = birthDay;
+	}
+
 	@Override
 	public int hashCode() {
 		final int prime = 31;
 		int result = 1;
 		result = prime * result + ((address == null) ? 0 : address.hashCode());
+		result = prime * result + ((birthDay == null) ? 0 : birthDay.hashCode());
 		result = prime * result + ((firstName == null) ? 0 : firstName.hashCode());
 		result = prime * result + ((gender == null) ? 0 : gender.hashCode());
 		result = prime * result + (int) (id ^ (id >>> 32));
@@ -77,11 +96,16 @@ public class Person implements Serializable {
 			return false;
 		if (getClass() != obj.getClass())
 			return false;
-		Person other = (Person) obj;
+		PersonVOv2 other = (PersonVOv2) obj;
 		if (address == null) {
 			if (other.address != null)
 				return false;
 		} else if (!address.equals(other.address))
+			return false;
+		if (birthDay == null) {
+			if (other.birthDay != null)
+				return false;
+		} else if (!birthDay.equals(other.birthDay))
 			return false;
 		if (firstName == null) {
 			if (other.firstName != null)
@@ -102,6 +126,5 @@ public class Person implements Serializable {
 			return false;
 		return true;
 	}
-	
-	
 }
+

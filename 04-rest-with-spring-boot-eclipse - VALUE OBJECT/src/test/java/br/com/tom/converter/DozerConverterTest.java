@@ -23,7 +23,6 @@ public class DozerConverterTest {
     @Test
     public void parseEntityToVOTest() {
         PersonVO output = DozerConverter.parseObject(inputObject.mockEntity(), PersonVO.class);
-        Assert.assertEquals((2L), output.getId());
         Assert.assertEquals("First Name Test0", output.getFirstName());
         Assert.assertEquals("Last Name Test0", output.getLastName());
         Assert.assertEquals("Addres Test0", output.getAddress());
