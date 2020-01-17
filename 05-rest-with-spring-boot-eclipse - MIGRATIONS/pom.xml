@@ -50,6 +50,12 @@
     	<artifactId>dozer-core</artifactId>
     	<version>6.5.0</version>
 	</dependency>
+	
+		<dependency>
+    	<groupId>org.flywaydb</groupId>
+    	<artifactId>flyway-maven-plugin</artifactId>
+    	<version>6.1.4</version>
+	</dependency>
 </dependencies>
 
 <build>
@@ -58,6 +64,29 @@
 			<groupId>org.springframework.boot</groupId>
 			<artifactId>spring-boot-maven-plugin</artifactId>
 		</plugin>
+		
+		<plugin>
+                <groupId>org.flywaydb</groupId>
+                <artifactId>flyway-maven-plugin</artifactId>
+                <configuration>
+                    <url>jdbc:mysql://localhost:3306/</url>
+                    <user>root</user>
+                    <password>root2019</password>
+                </configuration>
+                <dependencies>
+                    <dependency>
+                        <groupId>mysql</groupId>
+                        <artifactId>mysql-connector-java</artifactId>
+                        <version>${mysql.version}</version>
+                        <exclusions>
+                        	<exclusion>
+                        		<groupId>org.slf4j</groupId>
+                        		<artifactId>slf4j-api</artifactId>
+                        	</exclusion>
+                        </exclusions>
+                    </dependency>
+                </dependencies>
+            </plugin>
 	</plugins>
 </build>
   
